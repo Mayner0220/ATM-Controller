@@ -12,27 +12,27 @@ python atm_controller.py
 Follow the class and method usage below to add the case you want to test the main funtion in the code.
 
 - Bank
-  - Bank()
+  - `Bank()`
     ```
     dummy_bank = Bank()
     ```
-  - Bank.add_entry()
+  - `Bank.add_entry()`
     ```
     dummy_bank.add_entry(card_num, pin)
     Ex) dummy_bank(123456789, 1234)
     ```
-  - Bank.add_account()
+  - `Bank.add_account()`
     ```
     dummy_bank.add_account(card_num, account, amount)
     Ex) dummy_bank.add_account(123456789, "dummy_account", 100)
     ```
 - AtmController
-  - AtmController()
+  - `AtmController()`
     ```
     dummy_atm = AtmController(Bank, cash_bin)
     Ex) dummy_atm = AtmController(dummy_bank, 1000)
     ```
-  - AtmController.__call__()
+  - `AtmController.__call__()`
     ```
     dummy_atm(card_num, pin, account, action, amount)
     
